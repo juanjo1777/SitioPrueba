@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If ... Else</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <script>
+            let valor = prompt("Escriba un numero positivo ", 1);
+            if (valor > 0){
+                alert("OK ... ("+valor+")");
+                for (var i = 0; i < valor; i++){
+                    document.write("<img src='rr/verde.png' width='150'/>")
+                }
+            }else{
+                alert("valor incorrecto ... ("+valor+")");
+                document.write("<img src='rr/rojo.png' width='150'/>")
+            }
+        </script>
+    </body>
+</html>
