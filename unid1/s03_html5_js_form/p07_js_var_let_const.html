@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Variables, Funciones y Objetos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            //var, let y const
+
+            //var permite el error en la redeclaración
+            var xValor1 = 10;
+            console.log(xValor1);       //10
+            var xValor1 = 20;           //Error no reconocido
+            //xValor1 = 20;             //asignacion correcta
+            console.log(xValor1);       //20
+
+            var xValor2 = 30;              
+            if (true){                  
+                console.log(xValor2);   //30
+                var xValor2 = 40;       //Error no reconocido
+                //xValor2 = 40          //Asignacion correcta
+            }
+            console.log(xValor2);       //40
+            
+            //let no permite el error de la redeclaración
+            let xValor1 = 10;
+            console.log(xValor1);       //10
+            //let xValor1 = 20;         //Error reconocido
+            xValor1 = 20;               //asignacion correcta
+            console.log(xValor1);       //20
+
+            let xValor2 = 30;              
+            if (true){                  
+                console.log(xValor2);   //30
+                //let xValor2 = 40;     //Error reconocido
+                xValor2 = 40            //Asignacion correcta
+            }
+            console.log(xValor2);       //40
+
+            //const no permite la redeclaración
+            //No permite asignacion, salvas excepciones
+            const xValor1 = 10;
+            console.log(xValor1);
+            //const xValor1 = 20;       //no permite redeclaracion
+            const xValor2 = [30,40,50];
+            console.log(xValor2);
+            xValor2.push(60);
+            console.log(xValor2);
+        </script>
+    </body>
+</html>

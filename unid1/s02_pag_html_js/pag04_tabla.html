@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tabla</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            td{background-color: orange;}
+            #border{border: red dashed 2px;}
+            .forma{font-size: 32px; color: blue;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Tabla 3 x 4</h1>
+        <table border="1">
+            <tr>
+                <td colspan="4">Fila1_Colum1</td>
+<!--            <td>Fila1_Colum2</td>
+                <td>Fila1_Colum3</td>
+                <td>Fila1_Colum4</td>       -->
+            </tr>
+            <tr>
+                <td>Fila2_Colum1</td>
+                <td rowspan="2">Fila2_Colum2</td>
+                <td>Fila2_Colum3</td>
+                <td class="forma">Fila2_Colum4</td>
+            </tr>
+            <tr>
+                <td>Fila3_Colum1</td>
+<!--            <td>Fila3_Colum2</td>       -->
+                <td id="border">Fila3_Colum3</td>
+                <td>Fila3_Colum4</td>
+            </tr>
+        </table>
+    </body>
+</html>     
